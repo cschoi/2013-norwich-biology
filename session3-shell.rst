@@ -161,10 +161,9 @@ The `cd` command takes an argument which is the directory
 name. Directories can be specified using either a *relative* path or a
 full *path*. The directories on the computer are arranged into a
 hierarchy. The full path tells you where a directory is in that
-hierarchy, all the way from the root and downwards.
+hierarchy, all the way from the root and downwards. 
 
- Navigate to the home directory. Now, enter the `pwd`
-command and you should see the full name of your home directory. 
+Navigate to the home directory. Now, enter the `pwd` command and you should see the full name of your home directory. 
 This tells you that you are in a directory that is named the same as
 your user, which sits inside one or more other directories. The
 very top of the hierarchy is a directory called `/` which is usually
@@ -298,8 +297,9 @@ The down arrow takes your forwards in the command history.
 
 ^-C will cancel the command you are writing, and give you a fresh prompt.
 
-^-R will do a reverse-search through your command history.  This
-is very useful.
+You can display all your command history (since the last login) using command::
+
+    history
 
 
 
