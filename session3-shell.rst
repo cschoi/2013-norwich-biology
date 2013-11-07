@@ -4,6 +4,8 @@ Session 3: Shell and shell scripting
 
 An extended version of this tutorial is available here: https://github.com/swcarpentry/boot-camps/tree/2013-06-wise-beginners/shell
 
+Want to learn more? Come to one of the Software Carpentry bootcamps! http://www.software-carpentry.org/
+
 
 Material by Milad Fatenejad, Sasha Wood, Radhika Khetani and Tracy Teal
 
