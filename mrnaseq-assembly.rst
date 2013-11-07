@@ -58,7 +58,7 @@ Type::
 
    for i in *.pe.qc.keep.abundfilt.fq.gz
    do
-       scripts/split-paired-reads.py $i
+       split-paired-reads.py $i
    done
 
    cat *.1 > left.fq
@@ -72,5 +72,7 @@ to extract the files into 'right' and 'left'; then run::
 
 Searching the resulting transcriptome
 -------------------------------------
+
+...
 
 .. @@ download a protein sequence or two that I know
