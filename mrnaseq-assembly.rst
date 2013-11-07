@@ -82,8 +82,17 @@ Do::
    cp trinity_out_dir/Trinity.fasta ./assembly.fa
    formatdb -i assembly.fa -o T -p F
 
-and 
+and then let's search for a gene; NP_075023, a zinc transporter, is a
+good one (because I know it's in the assembly :).
 
-...
+You can go grab it yourself (go to http://www.ncbi.nlm.nih.gov/protein/NP_075023.2, send to file) OR find it in the file browser under Training Files, NGS bootcamp biologists, NP_0705023.fasta.
 
-.. @@ download a protein sequence or two that I know
+Once you have the file, you can now BLAST it against your assembly::
+
+   blastall -i NP_075023.fasta -d assembly.fa -p tblastn -o blast.txt -e 1e-12
+
+And now do::
+
+   less blast.txt
+
+to take a look at the results.
