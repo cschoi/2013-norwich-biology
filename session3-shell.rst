@@ -4,6 +4,8 @@ Session 3: Shell and shell scripting
 
 An extended version of this tutorial is available here: https://github.com/swcarpentry/boot-camps/tree/2013-06-wise-beginners/shell
 
+Want to learn more? Come to one of the Software Carpentry bootcamps! http://www.software-carpentry.org/
+
 
 Material by Milad Fatenejad, Sasha Wood, Radhika Khetani and Tracy Teal
 
@@ -650,6 +652,8 @@ you enter::
 
 You will see that the file permissions have changed. 
 Congratulations, you just created your first shell script!
+
+Let's see if we can create a more useful script based on what we learnt from the mRNAseq normalization and assembly module. The module is actually in the teaching materials `trim-and-assemble.sh`. Copy it over to your home directory.
 
 Searching files
 ---------------
