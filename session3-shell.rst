@@ -85,21 +85,24 @@ you will see that `testfile` is gone.
 Changing Directories
 --------------------
 
+For some parts of the tutorial we will be using sample data. In order to download them, type into the terminal the following command::
+
+    git clone https://github.com/ngs-docs/2013-norwich-biology.git TGAC-workshop
+
 Now, let's move to a different directory. The command `cd` (change
-directory) is used to move around. Let's move into the `boot-camps`
+directory) is used to move around. Let's move into the `TGAC-workshop`
 directory. Enter the following command::
 
-    cd boot-camps
+    cd TGAC-workshop
 
 Now use the `ls` command to see what is inside this directory. 
-This directory contains all of the material for this boot camp. Now
+This directory contains all of the material for this workshop. Now
 move to the directory containing the data for the shell tutorial::
 
-    cd shell
+    cd data
 
 If you enter the `cd` command by itself, you will return to the home
-directory. Try this, and then navigate back to the `shell`
-directory.
+directory. 
 
 Arguments (flags)
 -----------------
@@ -129,7 +132,7 @@ you read a man file you will understand more of it.
 Examining the contents of other directories
 -------------------------------------------
 
-For some parts of the tutorial we will be using sample data. In order to download them, type into the terminal the following command: git clone https://github.com/ngs-docs/2013-norwich-biology.git TGAC-workshop
+
 
 By default, the `ls` commands lists the contents of the working
 directory (i.e. the directory you are in). However, you can also
