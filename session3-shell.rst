@@ -659,7 +659,7 @@ Searching files
 You can search the contents of a file using the command `grep`. The
 `grep` program is very powerful and useful especially when combined
 with other commands by using the pipe. Navigate to the `Lawrence`
-directory. Every data file in this directory has a line which says
+directory. Many data files in this directory have a line which says
 "Volume". Let's see how many times Volume occurs ::
 
     grep Volume *
