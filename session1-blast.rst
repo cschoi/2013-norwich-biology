@@ -7,7 +7,7 @@ Welcome!
 
 `Welcome lecture <_static/norwich-lecture-welcome.pptx.pdf>`__
 
-Materials from the Next-Gen Sequence Analysis Workshop including the instructions on how to install and configure all software that you will need can be foundhere: 
+Materials from the Next-Gen Sequence Analysis Workshop including the instructions on how to install and configure all software that you will need can be found here: 
 http://ged.msu.edu/angus/tutorials-2013/ 
 
 TODO:
