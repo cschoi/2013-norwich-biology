@@ -104,7 +104,7 @@ Do the reciprocal BLAST, too::
 
 Extract reciprocal best hit::
 
-   python ~softare/ngs-scripts/blast/blast-to-ortho-csv.py ecoli0104.faa NC_000913.faa 0104.x.NC NC.x.0104 > ortho.csv
+   python ~/software/ngs-scripts/blast/blast-to-ortho-csv.py ecoli0104.faa NC_000913.faa 0104.x.NC NC.x.0104 > ortho.csv
 
 This generates a file 'ortho.csv', containing the ortholog assignments and
 their annotations.
