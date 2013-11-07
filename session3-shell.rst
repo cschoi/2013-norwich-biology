@@ -385,18 +385,6 @@ It will print out the contents of `ex_data.txt` twice. `cat` just
 takes a list of file names and writes them out one after another (this
 is where the name comes from, `cat` is short for concatenate). 
 
-* * * *
-**Short Exercises**
-
-1.  Print out the contents of the `~/TGAC-workshop/data/dictionary.txt`
-    file. What does this file contain?
-
-2.  Without changing directories, (you should still be in `shell`),
-    use one short command to print the contents of all of the files in
-    the `<your home directory>/TGAC-workshop/data/THOMAS` directory.
-
-* * * *
-
 `cat` is a terrific program, but when the file is really big, it can
 be annoying to use. The program, `less`, is useful for this
 case. Enter the following command::
