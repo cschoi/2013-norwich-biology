@@ -417,7 +417,7 @@ Redirection
 Let's turn to the experimental data from the hearing tests. 
 This data is located in the `data`
 directory. Each subdirectory corresponds to a particular participant
-in the study. Navigate to the `Bert` subdirectory in `data`.  First,
+in the study. Navigate to the `Lawrence` subdirectory in `data`.  First,
 press `ls` to look at the files. There
 are a bunch of text files which contain experimental data
 results. Lets print them all::
@@ -480,22 +480,21 @@ The `wc` program (word count) counts the number of lines, words, and
 characters in one or more files. Make sure you are in the `data`
 directory, then enter the following command::
 
-    wc Bert/* gerdal/*4*
+    wc Lawrence/* 
 
 For each of the files indicated, `wc` has printed a line with three
 numbers and also the relative file name. The first is the number of lines in that file. The second is
 the number of words. Third, the total number of characters is
 indicated. The bottom line contains this information summed over all of
-the files. Thus, there were 10445 characters in total. 
+the files. 
 
-Remember that the `Bert/*` and `gerdal/*4*` files were merged
+Remember that the `Lawrence/*` files were merged
 into the `all_data` file. So, we should see that `all_data` contains
 the same number of characters::
 
     wc all_data
 
-Every character in the file takes up one byte of disk space. Thus, the
-size of the file in bytes should also be 10445. Let's confirm this::
+Every character in the file takes up one byte of disk space. Let's confirm this::
 
     ls -l all_data
 
@@ -508,14 +507,13 @@ The awesome power of the Pipe
 -----------------------------
 
 Suppose I wanted to only see the total number of character, words, and
-lines across the files `Bert/*` and `gerdal/*4*`. I don't want to
+lines across the files `Lawrence/*`. I don't want to
 see the individual counts, just the total. Of course, I could just do::
 
     wc all_data
 
 Since this file is a concatenation of the smaller files. Sure, this
-works, but I had to create the `all_data` file to do this. Thus, I
-have wasted a precious 7062 bytes of hard disk space. We can do this
+works, but I had to create the `all_data` file to do this. We can do this
 *without* creating a temporary file, but first I have to show you two
 more commands: `head` and `tail`. These commands print the first few,
 or last few, lines of a file, respectively. Try them out on
@@ -533,12 +531,11 @@ file use::
 
 Let's turn back to the problem of printing only the total number of
 lines in a set of files without creating any temporary files. To do
-this, we want to tell the shell to take the output of the `wc Bert/*
-gerdal/*4*` and send it into the `tail -n 1` command. The `|`
+this, we want to tell the shell to take the output of the `wc Lawrence/*` and send it into the `tail -n 1` command. The `|`
 character (called pipe) is used for this purpose. Enter the following
 command::
 
-    wc Bert/* gerdal/Data0559 | tail -n 1
+    wc Lawrence/* | tail -n 1
 
 This will print only the total number of lines, characters, and words
 across all of these files. What is happening here? Well, `tail`, like
@@ -607,7 +604,7 @@ Try looking at this file with `less` - note that the file itself has not changed
 
 Let's navigate back to `data`. Enter the following command::
 
-    wc Bert/* | sort -k 3 -n
+    wc Lawrence/* | sort -k 3 -n
 
 We are already familiar with what the first of these two commands
 does: it creates a list containing the number of characters, words,
@@ -661,13 +658,11 @@ Searching files
 
 You can search the contents of a file using the command `grep`. The
 `grep` program is very powerful and useful especially when combined
-with other commands by using the pipe. Navigate to the `Bert`
-directory. Every data file in this directory has a line which says
-"Range". The range represents the smallest frequency range that can be
-discriminated. Lets list all of the ranges from the tests that Bert
-conducted::
+with other commands by using the pipe. Navigate to the `Lawrence`
+directory. Many data files in this directory have a line which says
+"Volume". Let's see how many times Volume occurs ::
 
-    grep Range *
+    grep Volume *
 
 
 Finding files

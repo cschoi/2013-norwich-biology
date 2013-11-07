@@ -85,7 +85,9 @@ Let's convert 'em to a CSV file::
    python ~/software/ngs-scripts/blast/blast-to-csv-with-names.py ecoli0104.faa NC_000913.faa 0104.x.NC > 0104.x.NC.csv
 
 This creates a file '0104.x.NC.csv', which you can open in a spreadsheet
-program like Excel or Google Docs/Spreadsheet.
+program like Excel or Google Docs/Spreadsheet. ::
+
+    grep ^'>' fasta_file | wc -l
 
 Reciprocal BLAST calculation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
