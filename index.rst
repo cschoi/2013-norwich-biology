@@ -19,7 +19,7 @@ Explain: minute cards; stick notes on monitors.
    session1-blast
    session2-mrnaseq
    session3-shell
-..   session4-data
+   session4-data
 
 Indices and tables
 ==================
