@@ -113,6 +113,7 @@ quality information from all the reads and produces handy charts and
 statistics::
 
     mkdir ~/fastqc
+    chmod +x ~/software/FastQC/FastQC/fastqc
     ~/software/FastQC/FastQC/fastqc 0Hour_ATCACG_L002_R1_001.* -o ~/fastqc
 
 There is a folder for each of your sequence files, each of which

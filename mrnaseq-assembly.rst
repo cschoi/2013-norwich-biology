@@ -68,10 +68,21 @@ Type::
 
 to extract the files into 'right' and 'left'; then run::
 
+   export PATH=$PATH:~/software/bowtie:~/software/samtools
+
    ~/software/trinity/Trinity.pl --left left.fq --right right.fq --seqType fq -JM 1G
+
+This will produce an output file ``trinity_out_dir/Trinity.fasta``.
 
 Searching the resulting transcriptome
 -------------------------------------
+
+Do::
+
+   cp trinity_out_dir/Trinity.fasta ./assembly.fa
+   formatdb -i assembly.fa -o T -p F
+
+and 
 
 ...
 
