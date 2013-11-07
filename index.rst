@@ -17,7 +17,7 @@ Explain: minute cards; stick notes on monitors.
    :maxdepth: 2
 
    session1-blast
-..   session2-mrnaseq
+   session2-mrnaseq
 ..   session3-shell
 ..   session4-data
 
