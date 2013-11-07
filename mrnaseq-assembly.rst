@@ -2,6 +2,10 @@
 mRNAseq normalization and assembly
 ==================================
 
+We're going to do `digital normalization
+<http://ivory.idyll.org/blog/what-is-diginorm.html>`__ on the mRNAseq
+data -- this is a research output from my lab.
+
 Make a working directory and link in the data::
 
    cd
