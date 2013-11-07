@@ -585,8 +585,7 @@ want to create a file which contains the following names::
     Charles
 
 To do this, we need a program which allows us to create text
-files. There are many such programs, the easiest one which is
-installed on almost all systems is called `nano`. Navigate to `/tmp`
+files. We will use `gedit`. Navigate to `/tmp`
 and enter the following command::
 
     gedit toBeSorted
@@ -608,7 +607,7 @@ Let's navigate back to `data`. Enter the following command::
 
 We are already familiar with what the first of these two commands
 does: it creates a list containing the number of characters, words,
-and lines in each file in the `Bert` directory. This list is then
+and lines in each file in the `Lawrence` directory. This list is then
 piped into the `sort` command, so that it can be sorted. Notice there
 are two options given to sort::
 
@@ -632,7 +631,7 @@ Then enter the following text::
     #!/bin/bash
     wc * | sort -k 3 -n | head -n 1
 
-Now, `cd` into the `Bert` directory and enter the command
+Now, `cd` into the `Lawrence` directory and enter the command
 `../smallest`. Notice that it says permission denied. This happens
 because we haven't told the shell that this is an executable
 file. If you do `ls -l ../smallest`, it will show you the permissions on 
