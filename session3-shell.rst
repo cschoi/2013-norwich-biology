@@ -621,8 +621,7 @@ Printing the smallest file seems pretty useful. We don't want to type
 out that long command often. Let's create a simple script, a simple
 program, to run this command. The program will look at all of the
 files in the current directory and print the information about the
-smallest one. Let's call the script `smallest`. We'll use `nano` to
-create this file. Navigate to the `data` directory, then::
+smallest one. Let's call the script `smallest`. Navigate to the `data` directory, then::
 
     gedit smallest
 
