@@ -2,6 +2,9 @@
 mRNAseq normalization and assembly
 ==================================
 
+Digital normalization
+---------------------
+
 We're going to do `digital normalization
 <http://ivory.idyll.org/blog/what-is-diginorm.html>`__ on the mRNAseq
 data -- this is a research output from my lab.
@@ -45,5 +48,29 @@ Combine and rename and make the data files friendly::
       mv $i $newfile
       gzip $newfile
    done
+
+Running the assembler
+---------------------
+
+Type::
+
+   cd ~/assembly
+
+   for i in *.pe.qc.keep.abundfilt.fq.gz
+   do
+       scripts/split-paired-reads.py $i
+   done
+
+   cat *.1 > left.fq
+   cat *.2 > right.fq
+
+   gunzip -c *.se.qc.keep.abundfilt.fq.gz >> left.fq
+
+to extract the files into 'right' and 'left'; then run::
+
+   ~/software/trinity/Trinity.pl --left left.fq --right right.fq --seqType fq -JM 1G
+
+Searching the resulting transcriptome
+-------------------------------------
 
 .. @@ download a protein sequence or two that I know
