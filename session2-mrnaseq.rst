@@ -3,7 +3,7 @@ Session 2: mRNAseq assembly and annotation
 ==========================================
 
 Copying common files around
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Go to Activities (upper left) & click; select the file drawer.
 
@@ -15,11 +15,10 @@ Double click on 'NGS bootcamp biologists'.
 Copy the desired files (right click, copy); then go over the Bookmarks
 again, select 'Home'.  Do 'paste'.
 
----
+Working with mRNAseq data
+-------------------------
 
-mrnaseq!!
-
-https://khmer-protocols.readthedocs.org/en/latest/
+(Based https://khmer-protocols.readthedocs.org/en/latest/
 
 :doc:`reads_and_qc`
 
