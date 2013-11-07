@@ -34,13 +34,6 @@ Try copying multiple lines at once::
 
 Done! You're now an expert!
 
-Copying common files around
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Go to Activities (upper left); select the file drawer.  Training materials.
-Copy & paste into 'student'.
-.. @@
-
 BLAST
 -----
 
