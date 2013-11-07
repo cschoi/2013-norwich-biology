@@ -651,6 +651,10 @@ you enter::
 You will see that the file permissions have changed. 
 Congratulations, you just created your first shell script!
 
+Let's see if we can create a more useful script based on what we learnt from the mRNAseq normalization and assembly module. The module is actually ready to download::
+
+    curl -0 http://github.com/ngs-docs/2013-norwich-biology/blob/master/trim-and-assemble.sh
+
 Searching files
 ---------------
 
