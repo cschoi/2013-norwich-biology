@@ -44,7 +44,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'labibi'
+project = u'2013-norwich-biology'
 copyright = u'2012, C. Titus Brown'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -175,10 +175,10 @@ htmlhelp_basename = 'labibidoc'
 # Various settings to pass to templates:
 
 html_context = {
-   "google_analytics_id" : 'UA-36028965-1',
-   "disqus_shortname" : 'labibi',
-   "github_base_account" : 'ctb',
-   "github_project" : 'labibi',
+   "google_analytics_id" : '',
+   "disqus_shortname" : '',
+   "github_base_account" : '',
+   "github_project" : '',
 }
 
 
